@@ -1,0 +1,26 @@
+name: masung_flutter
+description: 'A flutter package to interact with Masung printer'
+version: 0.0.1
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# The following section is specific to Flutter packages.
+flutter:
+  # adding or updating assets for this project.
+  plugin:
+    platforms:
+      android:
+        package: com.masung_flutter
+        pluginClass: MasungFlutterPlugin
